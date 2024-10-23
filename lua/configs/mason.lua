@@ -11,8 +11,6 @@ M.ensure_installed = {
   "rustfmt",
   -- TypeScript/JavaScript
   "typescript-language-server",
-  "eslint-lsp",
-  "prettier",
   "deno",
 }
 
