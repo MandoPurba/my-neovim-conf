@@ -27,26 +27,31 @@ return {
     opts = require "configs.mason"
   },
 
-  {
-    "supermaven-inc/supermaven-nvim",
-    cmd = {
-      "SupermavenStart",
-      "SupermavenStop",
-      "SupermavenRestart",
-      "SupermavenToggle",
-      "SupermavenStatus",
-      "SupermavenUseFree",
-      "SupermavenUsePro",
-      "SupermavenLogout",
-      "SupermavenShowLog",
-      "SupermavenClearLog"
-    },
-    config = function ()
-      require("configs.supermaven").setup()
-    end
-  },
+--   {
+--     "supermaven-inc/supermaven-nvim",
+--     cmd = {
+--       "SupermavenStart",
+--       "SupermavenStop",
+--       "SupermavenRestart",
+--       "SupermavenToggle",
+--       "SupermavenStatus",
+--       "SupermavenUseFree",
+--       "SupermavenUsePro",
+--       "SupermavenLogout",
+--       "SupermavenShowLog",
+--       "SupermavenClearLog"
+--     },
+--     config = function ()
+--       require("configs.supermaven").setup()
+--     end
+--   },
 
   {
     "nvim-telescope/telescope.nvim",
+  },
+
+  {
+    'Exafunction/codeium.vim',
+    event = 'BufEnter'
   }
  }
